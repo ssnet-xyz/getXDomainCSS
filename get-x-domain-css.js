@@ -22,7 +22,7 @@ function getXDomainCSS(url) {
         timeout = 60000,                        // 1 minute seems like a good timeout
         counter = 0,                            // Used to compare try time against timeout
         step = 30,                              // Amount of wait time on each load check
-        docStyles = document.styleSheets        // local reference
+        docStyles = document.styleSheets,       // local reference
         ssCount = docStyles.length,             // Initial stylesheet count
         promise = $.Deferred();
     
